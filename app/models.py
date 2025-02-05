@@ -1,7 +1,7 @@
 from pydantic import BaseModel
+from typing import Optional
 
 class Todo(BaseModel):
-
-    id: int
+    id:  Optional[int] = None
     title: str
     status: str
